@@ -13,6 +13,14 @@ module.exports = {
       screens: {
         '3xl': '1700px',
       },
+      fontFamily: {
+        cairo: ['Cairo'],
+        'open-sans': ['"Open-Sans"'],
+        roboto: ['Roboto'],
+      },
+      colors: {
+        'BMW-blue': '#3369D3',
+      },
     },
   },
   plugins: [],
