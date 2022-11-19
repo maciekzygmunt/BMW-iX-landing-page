@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Swiper } from '../../components';
+import { Swiper } from './Swiper';
 import BMWiLogo from '../../assets/bmw_i_logo.svg';
 import clsx from 'clsx';
 
