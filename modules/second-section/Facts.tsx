@@ -25,20 +25,22 @@ export const Facts = () => {
           <Image src={foto2} alt="BMW iX image" className="object-contain" />
         </div>
       </div>
-      <div className="flex flex-col pl-8 md:pl-0 max-w-[700px] lg:w-1/2">
+      <div className="flex flex-col  pl-8 md:pl-0 max-w-[700px] lg:w-1/2">
         <GiElectric className="text-[#A9A7A8] w-6 h-6 mb-6" />
-        <h2 className="font-cairo font-bold text-4xl max-w-[305px]">
-          FAKTY<span className="block"> O NOWYM BMW iX.</span>
+        <h2 className="font-cairo font-bold text-2xl md:text-4xl max-w-[305px]">
+          <span className="lg:block">FAKTY</span> O NOWYM BMW iX.
         </h2>
         <div className="flex flex-wrap mt-10">
           {TEXTS.map((el) => (
             <>
-              <div className="flex flex-col w-[190px] h-[172px] mr-[30px]">
+              <div className="flex flex-col w-full md:w-[190px] h-[120px] md:h-[172px] mr-[30px]">
                 <div className="border-b-[1px] border-slate-300 flex items-end relative mb-6">
                   <span className="font-cairo font-bold text-xs mb-2">{el.id}</span>
                   <div className="absolute h-[1px] w-3 bg-[#6D6D6D]  -bottom-[1px]" />
                 </div>
-                <span className=" text-BMW-grey text-[14px] font-open-sans">{el.text}</span>
+                <span className=" text-BMW-grey text-[13px] md:text-[14px] font-open-sans">
+                  {el.text}
+                </span>
               </div>
             </>
           ))}
