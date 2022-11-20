@@ -27,6 +27,7 @@ export const Swiper = ({ selectedSwipe }: SwiperProps) => {
       onSwiper={(swiper) => {
         setSwiper(swiper);
       }}
+      allowTouchMove={false}
       className="fixed top-0 left-0 right-0 w-full lg:max-h-[720px] 2xl:max-h-[720px] 3xl:max-h-[815px] select-none"
     >
       <SwiperSlide key={1}>

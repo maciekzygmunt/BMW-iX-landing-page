@@ -16,16 +16,16 @@ const TEXTS = [
 
 export const Facts = () => {
   return (
-    <div className="flex justify-between">
-      <div className="flex justify-end w-1/2">
-        <Image
-          src={foto1}
-          alt="BMW iX image"
-          className="w-[320px] h-[320px] translate-y-72 object-contain"
-        />
-        <Image src={foto2} alt="BMW iX image" className="w-[536px] h-[536px] ml-4 object-contain" />
+    <div className="flex flex-col gap-y-20 lg:flex-row items-center justify-center md:gap-x-8">
+      <div className="flex items-end gap-x-4 lg:w-1/2">
+        <div className="w-1/3 translate-y-14 md:ml-2">
+          <Image src={foto1} alt="BMW iX image" className="object-contain scale-80 origin-right" />
+        </div>
+        <div className="w-2/3">
+          <Image src={foto2} alt="BMW iX image" className="object-contain" />
+        </div>
       </div>
-      <div className="flex flex-col pl-32 w-1/2">
+      <div className="flex flex-col pl-8 md:pl-0 max-w-[700px] lg:w-1/2">
         <GiElectric className="text-[#A9A7A8] w-6 h-6 mb-6" />
         <h2 className="font-cairo font-bold text-4xl max-w-[305px]">
           FAKTY<span className="block"> O NOWYM BMW iX.</span>

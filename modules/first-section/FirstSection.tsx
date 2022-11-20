@@ -25,17 +25,22 @@ export const FirstSection = () => {
         <div className="absolute flex flex-col justify-center gap-y-7 pl-8 pr-8 w-full h-full z-20 max-w-[1364px]">
           <div className="flex flex-col justify-center gap-y-7 w-full h-full">
             <BMWiLogo />
-            <h1 className="font-cairo font-bold text-6xl">NOWE BMW iX</h1>
+            <h1 className="font-cairo font-bold text-5xl sm:text-6xl max-w-[200px] sm:max-w-3xl">
+              NOWE BMW iX
+            </h1>
             <span className="font-cairo font-semibold">PIONIER NOWEJ ERY.</span>
           </div>
-          <div className="absolute bottom-0 mb-16 flex items-center justify-center w-full">
-            <div className="absolute left-0 flex gap-x-4 pagination">
+          <div className="left-0 absolute bottom-0 mb-8 flex flex-col md:flex-row items-center justify-center w-full gap-y-16">
+            <button className="bg-BMW-blue font-cairo font-semibold text-[14px] tracking-[0.7px] h-[46px] w-[269px]">
+              UMÓW JAZDĘ PRÓBNĄ
+            </button>
+            <div className="flex gap-x-4 md:absolute md:left-0 md:pl-8">
               {indexes.map((el, i) => (
                 <div
                   key={i}
                   className={clsx(
                     slideSelected === i ? 'bg-BMW-blue' : 'bg-white',
-                    'h-[5px] w-[60px] cursor-pointer'
+                    'h-[5px] w-[40px] md:w-[60px] cursor-pointer'
                   )}
                   onClick={() => {
                     setSlideSelected(i);
@@ -43,9 +48,6 @@ export const FirstSection = () => {
                 />
               ))}
             </div>
-            <button className="bg-BMW-blue font-cairo font-semibold text-[18px] tracking-[0.9px] h-[63px] w-[372px]">
-              UMÓW JAZDĘ PRÓBNĄ
-            </button>
           </div>
         </div>
       </div>
