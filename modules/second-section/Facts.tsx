@@ -32,17 +32,18 @@ export const Facts = () => {
         </h2>
         <div className="flex flex-wrap mt-10">
           {TEXTS.map((el) => (
-            <>
-              <div className="flex flex-col w-full md:w-[190px] h-[120px] md:h-[172px] mr-[30px]">
-                <div className="border-b-[1px] border-slate-300 flex items-end relative mb-6">
-                  <span className="font-cairo font-bold text-xs mb-2">{el.id}</span>
-                  <div className="absolute h-[1px] w-3 bg-[#6D6D6D]  -bottom-[1px]" />
-                </div>
-                <span className=" text-BMW-grey text-[13px] md:text-[14px] font-open-sans">
-                  {el.text}
-                </span>
+            <div
+              key={el.id}
+              className="flex flex-col w-full md:w-[190px] h-[120px] md:h-[172px] mr-[30px]"
+            >
+              <div className="border-b-[1px] border-slate-300 flex items-end relative mb-6">
+                <span className="font-cairo font-bold text-xs mb-2">{el.id}</span>
+                <div className="absolute h-[1px] w-3 bg-[#6D6D6D]  -bottom-[1px]" />
               </div>
-            </>
+              <span className=" text-BMW-grey text-[13px] md:text-[14px] font-open-sans">
+                {el.text}
+              </span>
+            </div>
           ))}
         </div>
       </div>

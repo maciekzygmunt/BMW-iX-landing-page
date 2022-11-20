@@ -15,12 +15,15 @@ module.exports = {
       },
       fontFamily: {
         cairo: ['Cairo'],
-        'open-sans': ['"Open-Sans"', 'sans-serif'],
+        'open-sans': ['Open-Sans', 'sans-serif'],
         roboto: ['Roboto'],
       },
       colors: {
         'BMW-blue': '#3369D3',
         'BMW-grey': '#4E4E4E',
+      },
+      boxShadow: {
+        form: '0px 0px 41px 6px rgba(0,0,0,0.1)',
       },
     },
   },
