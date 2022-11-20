@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { GiElectric } from 'react-icons/gi';
+import Electric from '../../assets/ico_1.svg';
 import foto1 from '../../assets/images_2/foto1_1.png';
 import foto2 from '../../assets/images_2/foto1_2.png';
 
@@ -26,7 +26,7 @@ export const Facts = () => {
         </div>
       </div>
       <div className="flex flex-col  pl-8 md:pl-0 max-w-[700px] lg:w-1/2">
-        <GiElectric className="text-[#A9A7A8] w-6 h-6 mb-6" />
+        <Electric className="text-[#A9A7A8] mb-6" />
         <h2 className="font-cairo font-bold text-2xl md:text-4xl max-w-[305px]">
           <span className="lg:block">FAKTY</span> O NOWYM BMW iX.
         </h2>

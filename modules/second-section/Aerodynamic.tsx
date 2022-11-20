@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { IoCarSportSharp } from 'react-icons/io5';
+import Car from '../../assets/ico_2.svg';
 import foto1 from '../../assets/images_3/foto2_1.png';
 import foto2 from '../../assets/images_3/foto2_2.png';
 
@@ -15,7 +15,7 @@ export const Aerodynamic = () => {
         </div>
       </div>
       <div className="flex flex-col pl-8 pr-8 md:pl-0 max-w-[700px] lg:w-1/2 ml-2">
-        <IoCarSportSharp className="text-[#A9A7A8] w-8 h-8 mb-6" />
+        <Car className="text-[#A9A7A8] h-8 mb-6" />
         <h2 className="font-cairo font-bold text-2xl md:text-4xl max-w-[305px]">
           INNOWACYJNA AERODYNAMIKA BMW iX.
         </h2>
