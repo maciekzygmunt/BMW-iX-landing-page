@@ -7,7 +7,7 @@ import foto5 from '../../assets/images_4/photo_5.png';
 
 export const Grid = () => {
   return (
-    <div className="grid gap-2 grid-cols-6 grid-rows-4 md:grid-cols-12 md:grid-rows-2 px-4 mt-14 md:mt-40">
+    <div className="grid gap-2 grid-cols-6 grid-rows-4 md:grid-cols-12 md:grid-rows-2 px-4 max-w-[1930px] mt-14 md:mt-40">
       <Image
         src={foto1}
         alt="BMW-photo1"

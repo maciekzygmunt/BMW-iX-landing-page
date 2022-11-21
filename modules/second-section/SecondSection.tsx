@@ -4,7 +4,7 @@ import { Grid } from './Grid';
 
 export const SecondSection = () => {
   return (
-    <div className="flex flex-col mt-[60px] xl:mt-[180px]">
+    <div className="flex flex-col items-center mt-[60px] xl:mt-[180px]">
       <Facts />
       <Aerodynamic />
       <Grid />
