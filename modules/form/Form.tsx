@@ -44,16 +44,16 @@ export const Form = () => {
           </div>
           <div className="flex flex-col -translate-y-8 px-8 lg:shadow-form lg:bg-white lg:items-start lg:p-16 z-10">
             <div className="flex flex-col gap-y-2">
-              <div className="flex items-start">
+              <div className="flex items-start lg:mb-4">
                 <span className="font-cairo font-bold text-2xl lg:text-4xl">UMÓW JAZDĘ PRÓBNĄ</span>
                 <span className="font-cairo font-bold text-sm lg:text-lg ml-1 mt-[1px]">
                   BMW iX
                 </span>
               </div>
-              <span className="text-[#707070] font-open-sans font-light">
+              <span className="text-[#707070] lg:text-[20px] font-open-sans font-light">
                 Zachęcamy do ograniczenia poruszania się i pozostania w domu.
               </span>
-              <span className="text-[#707070] font-open-sans font-light">
+              <span className="text-[#707070] lg:text-[20px] font-open-sans font-light">
                 Jeśli jednak jazda testowa okaże się niezbędna prosimy o wypełnienie poniższego
                 formularza.
               </span>
@@ -71,7 +71,7 @@ export const Form = () => {
                   {['Pan', 'Pani'].map((el) => (
                     <label
                       key={el}
-                      className="font-roboto text-[13px] text-[#4E4E4E] flex items-center gap-x-1 "
+                      className="font-roboto text-[13px] lg:text-[20px] text-[#4E4E4E] flex items-center gap-x-1 "
                     >
                       <input
                         type="radio"
@@ -93,10 +93,10 @@ export const Form = () => {
                     {...register(input.id, {
                       required: true,
                     })}
-                    className="h-[40px] outline-none border border-[#DCDCDC] placeholder:text-[#4E4E4E] placeholder:font-open-sans placeholder:text-[13px] pl-[15px] py-[11px] focus:ring-BMW-blue focus:ring-2 transition-all"
+                    className="h-[40px] lg:h-[52px] outline-none border border-[#DCDCDC] placeholder:text-[#4E4E4E] placeholder:font-open-sans placeholder:text-[13px] lg:placeholder:text-[14px] pl-[15px] py-[11px] focus:ring-BMW-blue focus:ring-2 transition-all"
                   />
                 ))}
-                <button className="bg-BMW-blue h-[46px] hover:bg-blue-700 w-[165px] font-semibold text-[14px] tracking-[0.7px] text-white mt-4">
+                <button className="bg-BMW-blue h-[46px] lg:h-[63px] hover:bg-blue-700 w-[165px] lg:w-[243px] font-semibold text-[14px] lg:text-[18px] tracking-[0.7px] text-white mt-4">
                   WYŚLIJ
                 </button>
               </form>

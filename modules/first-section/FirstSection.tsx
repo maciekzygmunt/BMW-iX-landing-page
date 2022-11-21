@@ -25,13 +25,13 @@ export const FirstSection = () => {
         <div className="absolute flex flex-col justify-center gap-y-7 pl-8 pr-8 w-full h-full z-20 max-w-[1364px]">
           <div className="flex flex-col justify-center gap-y-7 w-full h-full">
             <BMWiLogo />
-            <h1 className="font-cairo font-bold text-5xl sm:text-6xl max-w-[200px] sm:max-w-3xl">
+            <h1 className="font-cairo font-bold text-5xl sm:text-[72px] max-w-[200px] sm:max-w-3xl">
               NOWE BMW iX
             </h1>
             <span className="font-cairo font-semibold">PIONIER NOWEJ ERY.</span>
           </div>
           <div className="left-0 absolute bottom-0 mb-8 flex flex-col md:flex-row items-center justify-center w-full gap-y-16">
-            <button className="bg-BMW-blue font-cairo font-semibold text-[14px] tracking-[0.7px] h-[46px] w-[269px]">
+            <button className="bg-BMW-blue font-cairo font-semibold text-[14px] lg:text-[18px] tracking-[0.7px] h-[46px] w-[269px] lg:h-[63px] lg:w-[372px]">
               UMÓW JAZDĘ PRÓBNĄ
             </button>
             <div className="flex gap-x-4 md:absolute md:left-0 md:pl-8">

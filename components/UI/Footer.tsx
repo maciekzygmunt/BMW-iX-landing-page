@@ -34,9 +34,9 @@ const LINKS = [
 export const Footer = () => {
   return (
     <>
-      <div className="bg-[#E6E6E6] flex flex-col items-center mt-10 z-10 p-14">
+      <div className="bg-[#E6E6E6] flex flex-col items-center mt-10 z-10 py-14 px-14">
         {/* SOCIALS */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-end border-b border-[#BEBEBE] w-full gap-y-7  my-[90px] max-w-[1363px] pb-7 ">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-end border-b border-[#BEBEBE] w-full gap-y-7  my-[90px] lg:mt-0 max-w-[1363px] pb-7 ">
           <span className="font-roboto font-light text-xl text-[#707070]">Dołącz do nas</span>
           <div className="flex gap-x-5">
             <Link href="https://www.facebook.com/BMW.Polska/" target="_blank">
@@ -69,7 +69,9 @@ export const Footer = () => {
               <div className="flex flex-col gap-y-4">
                 {section.links.map((link) => (
                   <Link key={link} href="/">
-                    <span className="font-roboto font-medium text-xs text-[#707070]">{link}</span>
+                    <span className="font-roboto font-medium text-xs lg:text-sm text-[#707070]">
+                      {link}
+                    </span>
                   </Link>
                 ))}
               </div>
