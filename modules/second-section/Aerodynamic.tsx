@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Zoom from 'react-medium-image-zoom';
 import Car from '../../assets/ico_2.svg';
 import foto1 from '../../assets/images_3/foto2_1.png';
 import foto2 from '../../assets/images_3/foto2_2.png';
@@ -8,10 +9,14 @@ export const Aerodynamic = () => {
     <div className="flex flex-col gap-y-20 lg:flex-row-reverse items-center justify-center md:gap-x-8 mt-36">
       <div className="flex items-start gap-x-4 lg:w-1/2 max-w-[826px]">
         <div className="w-2/3">
-          <Image src={foto1} alt="BMW iX image" className="object-contain" />
+          <Zoom zoomImg={{ src: '../../assets/images_3/foto2_1.png' }}>
+            <Image src={foto1} alt="BMW iX image" className="object-contain" />
+          </Zoom>
         </div>
         <div className="w-1/3 -translate-y-10">
-          <Image src={foto2} alt="BMW iX image" className="object-contain scale-80 origin-left" />
+          <Zoom>
+            <Image src={foto2} alt="BMW iX image" className="object-contain scale-80 origin-left" />
+          </Zoom>
         </div>
       </div>
       <div className="flex flex-col pl-8 pr-8 md:pl-0 max-w-[700px] lg:w-1/2 ml-2">

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Zoom from 'react-medium-image-zoom';
 import Electric from '../../assets/ico_1.svg';
 import foto1 from '../../assets/images_2/foto1_1.png';
 import foto2 from '../../assets/images_2/foto1_2.png';
@@ -19,10 +20,18 @@ export const Facts = () => {
     <div className="flex flex-col gap-y-20 lg:flex-row items-center justify-center md:gap-x-8">
       <div className="flex items-end gap-x-4 lg:w-1/2">
         <div className="w-1/3 translate-y-14 md:ml-2">
-          <Image src={foto1} alt="BMW iX image" className="object-contain scale-80 origin-right" />
+          <Zoom>
+            <Image
+              src={foto1}
+              alt="BMW iX image"
+              className="object-contain scale-80 origin-right"
+            />
+          </Zoom>
         </div>
         <div className="w-2/3">
-          <Image src={foto2} alt="BMW iX image" className="object-contain" />
+          <Zoom>
+            <Image src={foto2} alt="BMW iX image" className="object-contain" />
+          </Zoom>
         </div>
       </div>
       <div className="flex flex-col  pl-8 md:pl-0 max-w-[700px] lg:w-1/2">
