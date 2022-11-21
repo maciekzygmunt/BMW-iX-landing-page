@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <>
       {mobileMenuIsOpen && (
-        <div className="fixed flex flex-col justify-between z-30 top-0 inset-0 bg-black">
+        <div className="fixed flex flex-col justify-between z-50 top-0 inset-0 bg-black">
           <div className="flex flex-col items-end gap-y-4 pr-8 pt-7">
             <BMWlogo className="w-10 h-10 bg-black rounded-full" />
             <div className="w-full mr-20 right-16 h-[1px] bg-white/25 " />
