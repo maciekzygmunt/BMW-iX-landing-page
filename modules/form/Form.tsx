@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import Image from 'next/image';
+import { AnimatePresence } from 'framer-motion';
 import { useForm, FieldValues } from 'react-hook-form';
 import Triangle1 from '../../assets/images_5/Path-17.png';
 import BMWfront from '../../assets/images_5/bmw-ix-front.png';
-import Triangle2 from '../../assets/images_5/Path-16.svg';
 import BMWside from '../../assets/images_5/bmw-ix-side.webp';
 import { FormConfirmation } from './FormConfirmation';
 
@@ -16,16 +16,19 @@ const INPUTS = [
 
 export const Form = () => {
   const [confirmationIsOpen, setConfirmationIsOpen] = useState(false);
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = (data: FieldValues) => {
     console.log(data);
+    reset();
     setConfirmationIsOpen(true);
   };
 
   return (
     <>
-      {confirmationIsOpen && <FormConfirmation setIsOpen={setConfirmationIsOpen} />}
+      <AnimatePresence>
+        {confirmationIsOpen && <FormConfirmation setIsOpen={setConfirmationIsOpen} />}
+      </AnimatePresence>
       <div className="flex flex-col items-center mt-24">
         {/* FIRST CAR */}
         <div className="overflow-hidden w-full lg:hidden">
@@ -96,7 +99,7 @@ export const Form = () => {
                     className="h-[40px] lg:h-[52px] outline-none border border-[#DCDCDC] placeholder:text-[#4E4E4E] placeholder:font-open-sans placeholder:text-[13px] lg:placeholder:text-[14px] pl-[15px] py-[11px] focus:ring-BMW-blue focus:ring-2 transition-all"
                   />
                 ))}
-                <button className="bg-BMW-blue h-[46px] lg:h-[63px] hover:bg-blue-700 w-[165px] lg:w-[243px] font-semibold text-[14px] lg:text-[18px] tracking-[0.7px] text-white mt-4">
+                <button className="bg-BMW-blue transition-colors h-[46px] lg:h-[63px] hover:bg-blue-700 w-[165px] lg:w-[243px] font-semibold text-[14px] lg:text-[18px] tracking-[0.7px] text-white mt-4">
                   WYŚLIJ
                 </button>
               </form>
