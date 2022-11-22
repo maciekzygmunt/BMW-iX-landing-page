@@ -6,10 +6,13 @@ import foto2 from '../../assets/images_3/foto2_2.png';
 
 export const Aerodynamic = () => {
   return (
-    <div className="flex flex-col gap-y-20 lg:flex-row-reverse items-center justify-center md:gap-x-8 mt-36">
+    <div
+      id="aerodynamics"
+      className="flex flex-col gap-y-20 lg:flex-row-reverse items-center justify-center md:gap-x-8 mt-36"
+    >
       <div className="flex items-start gap-x-4 lg:w-1/2 max-w-[826px]">
         <div className="w-2/3">
-          <Zoom zoomImg={{ src: '../../assets/images_3/foto2_1.png' }}>
+          <Zoom>
             <Image src={foto1} alt="BMW iX image" className="object-contain" />
           </Zoom>
         </div>

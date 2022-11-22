@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { SlMenu } from 'react-icons/sl';
 import { BsX } from 'react-icons/bs';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-scroll';
 import BMWlogo from '../../assets/BMW-logo.svg';
 
 export const Header = () => {
@@ -29,15 +30,58 @@ export const Header = () => {
               />
             </div>
             <div className="flex flex-col justify-between items-center h-52 self-center">
-              <span className="text-white font-cairo font-semibold">NOWE BMW iX.</span>
+              <Link
+                to="facts"
+                spy={true}
+                smooth={true}
+                offset={150}
+                onClick={() => {
+                  setMobileMenuIsOpen(false);
+                }}
+              >
+                <span className="text-white font-cairo font-semibold">NOWE BMW iX.</span>
+              </Link>
               <div className="w-full right-16 h-[1px] bg-white/25 " />
-              <span className="text-white font-cairo font-semibold">INNOWACYJNA AERODYNAMIKA</span>
+              <Link
+                to="aerodynamics"
+                spy={true}
+                smooth={true}
+                offset={150}
+                onClick={() => {
+                  setMobileMenuIsOpen(false);
+                }}
+              >
+                <span className="text-white font-cairo font-semibold">
+                  INNOWACYJNA AERODYNAMIKA
+                </span>
+              </Link>
               <div className="w-[16rem] right-16 h-[1px] bg-white/25 " />
-              <span className="text-white font-cairo font-semibold">GALERIA</span>
+              <Link
+                to="grid"
+                spy={true}
+                smooth={true}
+                offset={-30}
+                onClick={() => {
+                  setMobileMenuIsOpen(false);
+                }}
+              >
+                <span className="text-white font-cairo font-semibold">GALERIA</span>
+              </Link>
             </div>
-            <button className="h-[46px] w-[269px] bg-BMW-blue mb-20 self-center font-cairo text-[14px] tracking-[0.7px] text-white font-semibold">
-              UMÓW JAZDĘ PRÓBNĄ
-            </button>
+            <Link
+              to="form"
+              spy={true}
+              smooth={true}
+              offset={-150}
+              className="self-center mb-20 "
+              onClick={() => {
+                setMobileMenuIsOpen(false);
+              }}
+            >
+              <button className="h-[46px] w-[269px] bg-BMW-blue font-cairo text-[14px] tracking-[0.7px] text-white font-semibold">
+                UMÓW JAZDĘ PRÓBNĄ
+              </button>
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>
@@ -51,10 +95,34 @@ export const Header = () => {
               }}
             />
             <div className="sm:flex gap-x-14 hidden">
-              <span className="font-cairo font-bold tracking-[0.9px] text-[18px]">Nowe BMW iX</span>
-              <span className="font-cairo font-bold tracking-[0.9px] text-[18px]">
-                Umów jazdę próbną
-              </span>
+              <Link
+                to="facts"
+                spy={true}
+                smooth={true}
+                offset={-20}
+                onClick={() => {
+                  setMobileMenuIsOpen(false);
+                }}
+                className="hover:cursor-pointer"
+              >
+                <span className="font-cairo font-bold tracking-[0.9px] text-[18px]">
+                  Nowe BMW iX
+                </span>
+              </Link>
+              <Link
+                to="form"
+                spy={true}
+                smooth={true}
+                offset={-80}
+                onClick={() => {
+                  setMobileMenuIsOpen(false);
+                }}
+                className="hover:cursor-pointer"
+              >
+                <span className="font-cairo font-bold tracking-[0.9px] text-[18px]">
+                  Umów jazdę próbną
+                </span>
+              </Link>
             </div>
             <BMWlogo className="w-10 h-10 self-start bg-black rounded-full" />
           </div>

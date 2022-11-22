@@ -38,7 +38,7 @@ export const Footer = () => {
         {/* SOCIALS */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-end border-b border-[#BEBEBE] w-full gap-y-7  my-[90px] lg:mt-0 max-w-[1363px] pb-7 ">
           <span className="font-roboto font-light text-xl text-[#707070]">Dołącz do nas</span>
-          <div className="flex gap-x-5">
+          <div className="flex gap-x-">
             <Link href="https://www.facebook.com/BMW.Polska/" target="_blank">
               <Image src={Facebook} alt="facebook" className="w-8 h-8" />
             </Link>

@@ -17,7 +17,10 @@ const TEXTS = [
 
 export const Facts = () => {
   return (
-    <div className="flex flex-col gap-y-20 lg:flex-row items-center justify-center md:gap-x-8">
+    <div
+      id="facts"
+      className="flex flex-col gap-y-20 lg:flex-row items-center justify-center md:gap-x-8"
+    >
       <div className="flex items-end gap-x-4 lg:w-1/2">
         <div className="w-1/3 translate-y-14 md:ml-2">
           <Zoom>

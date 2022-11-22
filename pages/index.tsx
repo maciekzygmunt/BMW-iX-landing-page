@@ -7,13 +7,18 @@ import { SecondSection } from '../modules/second-section';
 
 export default function Home() {
   return (
-    <Layout>
-      <>
-        <FirstSection />
-        <SecondSection />
-        <Form />
-        <Footer />
-      </>
-    </Layout>
+    <>
+      <Head>
+        <title>Nowe BMW iX</title>
+      </Head>
+      <Layout>
+        <>
+          <FirstSection />
+          <SecondSection />
+          <Form />
+          <Footer />
+        </>
+      </Layout>
+    </>
   );
 }

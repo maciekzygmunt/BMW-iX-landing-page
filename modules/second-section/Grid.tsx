@@ -10,7 +10,10 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 export const Grid = () => {
   return (
-    <div className="grid gap-2 grid-cols-6 grid-rows-4 md:grid-cols-12 md:grid-rows-2 px-4 max-w-[1930px] mt-14 md:mt-40">
+    <div
+      id="grid"
+      className="grid gap-2 grid-cols-6 grid-rows-4 md:grid-cols-12 md:grid-rows-2 px-4 max-w-[1930px] mt-14 md:mt-40"
+    >
       <div className="row-start-1 row-end-3 col-start-1 col-end-7 md:row-start-1 md:row-end-3 md:col-start-1 md:col-end-7">
         <Zoom>
           <Image src={foto1} alt="BMW-photo1" />

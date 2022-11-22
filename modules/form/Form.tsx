@@ -40,7 +40,7 @@ export const Form = () => {
           />
         </div>
         {/* TITLE FORM */}
-        <div className="flex items-center">
+        <div className="flex items-center" id="form">
           <div className="relative overflow-hidden hidden lg:flex justify-end translate-y-32">
             <Image src={BMWside} alt="bmw_front" className="absolute -right-32 scale-150 z-10" />
             <Image src={Triangle1} alt="triangle2" className="relative right-0 -translate-y-32" />
